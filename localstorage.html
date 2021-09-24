@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>local storage</title>
+</head>
+<body>
+    <div id="name"></div>
+    <script>
+        /*
+        if(typeof(Storage) !== "undefined"){
+             //Store an item
+        localStorage.setItem('name','Akande Toheeb');
+//Remove an item
+localStorage.removeItem('name')
+
+
+//Get item
+console.log(localStorage.name)
+
+if(localStorage.name){document.getElementById('name').innerHTML=localStorage.getItem('name')
+
+} else{
+    document.getElementById('name').innerHTML='No Name Found';
+
+}
+ } else{
+     console.log('Local storage not available')
+ }
+       */
+
+       if(typeof(Storage) !== "undefined"){
+             //Store an item
+        sessionStorage.setItem('name','oyebode timileyin');
+        /*
+        //Remove an item
+sessionStorage.removeItem('name')
+*/
+
+//Get item
+console.log(sessionStorage.name)
+
+if(sessionStorage.name){document.getElementById('name').innerHTML=sessionStorage.getItem('name')
+
+} else{
+    document.getElementById('name').innerHTML='No Name Found';
+
+}
+ } else{
+     console.log('Local storage not available')
+ }
+
+        
+        
+    </script>
+</body>
+</html>
